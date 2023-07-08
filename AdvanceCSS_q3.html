@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advance CSS Assignment</title>
+    <style>
+      .container {
+        height: 350px;
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        margin: 20px;
+        background-image: linear-gradient(to right, #60a8c5, #2d2db0);
+        border: 2px solid black;
+        border-radius: 10px;
+      }
+      .container:hover {
+        transform: rotate(-45deg);
+      }
+      .card-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .card-top p {
+        color: white;
+        font-size: 17px;
+        padding-bottom: 0;
+      }
+      .dates {
+        margin: 20px;
+      }
+      button {
+        font-weight: 600;
+        padding: 10px;
+        border: none;
+        background-image: linear-gradient(to right, #83e6ae, rgb(56, 177, 56));
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <div class="card-top">
+        <h1>#01</h1>
+        <p>Created On : 01/01/2023</p>
+      </div>
+      <div class="dates">
+        <h1>Important Dates</h1>
+        <ul>
+          <li>January 26 - Republic Day</li>
+          <li>August 15 - Independence Day</li>
+          <li>October 2 - Gandhi Jayanti</li>
+          <li>August 29 - National Sports Day</li>
+        </ul>
+      </div>
+      <button>Mark As Read</button>
+    </main>
+  </body>
+</html>

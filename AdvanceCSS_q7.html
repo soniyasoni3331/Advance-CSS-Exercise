@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advance CSS Assignment</title>
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 50px;
+      }
+      button {
+        background-image: linear-gradient(
+          to right,
+          rgb(80, 100, 231),
+          rgb(47, 47, 163)
+        );
+        animation: move 2s ease infinite alternate;
+        border-radius: 10px;
+        padding: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        border: none;
+      }
+
+      a {
+        text-decoration: none;
+        color: white;
+        font-weight: bolder;
+      }
+      @keyframes move {
+        0%,
+        100% {
+          transform: translate(-50%);
+        }
+        50% {
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <button>
+      <a href="https://pwskills.com/">Click Me To Visit PW Skills</a>
+    </button>
+  </body>
+</html>
